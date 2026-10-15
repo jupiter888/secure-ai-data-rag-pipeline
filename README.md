@@ -34,6 +34,9 @@ The architecture separates five trust boundaries:
 | TB-04 | Retrieved Content → LLM | Untrusted-content screening and constrained context construction |
 | TB-05 | LLM Output → User | Output validation, sensitive-value redaction, and release decisions |
 
+- [Data-Flow Diagram](diagrams/data-flow-diagram.md) — Data movement, processing stages, and five security trust boundaries.
+- [Attack-Path Diagram](diagrams/attack-path-diagram.md) — Five adversarial scenarios, observed outcomes, implemented controls, and residual risks.
+
 The system uses synthetic documents classified as `PUBLIC`, `INTERNAL`, `CONFIDENTIAL`, or `RESTRICTED`.
 
 ### Implemented Components
