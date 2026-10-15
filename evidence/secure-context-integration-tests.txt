@@ -1,0 +1,99 @@
+test_empty_content_rejected (test_context_builder.TestContextBuilder.test_empty_content_rejected) ... ok
+test_fixed_system_instruction (test_context_builder.TestContextBuilder.test_fixed_system_instruction) ... ok
+test_invalid_document_id_rejected (test_context_builder.TestContextBuilder.test_invalid_document_id_rejected) ... ok
+test_invalid_question_rejected (test_context_builder.TestContextBuilder.test_invalid_question_rejected) ... ok
+test_json_encoded_content_preserved (test_context_builder.TestContextBuilder.test_json_encoded_content_preserved) ... ok
+test_known_injection_rejected (test_context_builder.TestContextBuilder.test_known_injection_rejected) ... ok
+test_legitimate_context_built (test_context_builder.TestContextBuilder.test_legitimate_context_built) ... ok
+test_paraphrased_attack_remains_residual_risk (test_context_builder.TestContextBuilder.test_paraphrased_attack_remains_residual_risk) ... ok
+test_retrieved_content_remains_in_user_message (test_context_builder.TestContextBuilder.test_retrieved_content_remains_in_user_message) ... ok
+test_role_delimiter_cannot_create_message (test_context_builder.TestContextBuilder.test_role_delimiter_cannot_create_message) ... ok
+test_authorized_researcher_allowed (test_document_access.TestDocumentAccessPolicy.test_authorized_researcher_allowed) ... ok
+test_cross_team_document_access_denied (test_document_access.TestDocumentAccessPolicy.test_cross_team_document_access_denied) ... ok
+test_empty_grants_deny_access (test_document_access.TestDocumentAccessPolicy.test_empty_grants_deny_access) ... ok
+test_invalid_document_id_rejected (test_document_access.TestDocumentAccessPolicy.test_invalid_document_id_rejected) ... ok
+test_invalid_grant_collection_rejected (test_document_access.TestDocumentAccessPolicy.test_invalid_grant_collection_rejected) ... ok
+test_invalid_principal_grant_rejected (test_document_access.TestDocumentAccessPolicy.test_invalid_principal_grant_rejected) ... ok
+test_missing_grants_denied (test_document_access.TestDocumentAccessPolicy.test_missing_grants_denied) ... ok
+test_researcher_without_grant_denied (test_document_access.TestDocumentAccessPolicy.test_researcher_without_grant_denied) ... ok
+test_role_denial_overrides_document_grant (test_document_access.TestDocumentAccessPolicy.test_role_denial_overrides_document_grant) ... ok
+test_unknown_role_denied_despite_grant (test_document_access.TestDocumentAccessPolicy.test_unknown_role_denied_despite_grant) ... ok
+test_content_tampering (test_document_metadata.TestDocumentMetadata.test_content_tampering) ... ok
+test_empty_document (test_document_metadata.TestDocumentMetadata.test_empty_document) ... ok
+test_invalid_classification (test_document_metadata.TestDocumentMetadata.test_invalid_classification) ... ok
+test_missing_source_identifier (test_document_metadata.TestDocumentMetadata.test_missing_source_identifier) ... ok
+test_valid_document (test_document_metadata.TestDocumentMetadata.test_valid_document) ... ok
+test_authorized_document_accepted (test_ingestion_gateway.TestIngestionGateway.test_authorized_document_accepted) ... ok
+test_duplicate_document_id_rejected (test_ingestion_gateway.TestIngestionGateway.test_duplicate_document_id_rejected) ... ok
+test_invalid_object_rejected (test_ingestion_gateway.TestIngestionGateway.test_invalid_object_rejected) ... ok
+test_missing_provenance_rejected (test_ingestion_gateway.TestIngestionGateway.test_missing_provenance_rejected) ... ok
+test_quarantine_excludes_document_content (test_ingestion_gateway.TestIngestionGateway.test_quarantine_excludes_document_content) ... ok
+test_recomputed_digest_attack_rejected (test_ingestion_gateway.TestIngestionGateway.test_recomputed_digest_attack_rejected) ... ok
+test_tampered_document_quarantined (test_ingestion_gateway.TestIngestionGateway.test_tampered_document_quarantined) ... ok
+test_unauthorized_classification_quarantined (test_ingestion_gateway.TestIngestionGateway.test_unauthorized_classification_quarantined) ... ok
+test_untrusted_source_quarantined (test_ingestion_gateway.TestIngestionGateway.test_untrusted_source_quarantined) ... ok
+test_classification_mismatch (test_provenance_registry.TestProvenanceRegistry.test_classification_mismatch) ... ok
+test_duplicate_registration_rejected (test_provenance_registry.TestProvenanceRegistry.test_duplicate_registration_rejected) ... ok
+test_invalid_trusted_digest_rejected (test_provenance_registry.TestProvenanceRegistry.test_invalid_trusted_digest_rejected) ... ok
+test_missing_provenance_record (test_provenance_registry.TestProvenanceRegistry.test_missing_provenance_record) ... ok
+test_owner_mismatch (test_provenance_registry.TestProvenanceRegistry.test_owner_mismatch) ... ok
+test_recomputed_digest_attack (test_provenance_registry.TestProvenanceRegistry.test_recomputed_digest_attack) ... ok
+test_source_identity_mismatch (test_provenance_registry.TestProvenanceRegistry.test_source_identity_mismatch) ... ok
+test_valid_provenance (test_provenance_registry.TestProvenanceRegistry.test_valid_provenance) ... ok
+test_analyst_allowed_internal (test_retrieval_authorization.TestRetrievalAuthorization.test_analyst_allowed_internal) ... ok
+test_analyst_denied_confidential (test_retrieval_authorization.TestRetrievalAuthorization.test_analyst_denied_confidential) ... ok
+test_empty_principal_id_denied (test_retrieval_authorization.TestRetrievalAuthorization.test_empty_principal_id_denied) ... ok
+test_guest_allowed_public (test_retrieval_authorization.TestRetrievalAuthorization.test_guest_allowed_public) ... ok
+test_guest_denied_internal (test_retrieval_authorization.TestRetrievalAuthorization.test_guest_denied_internal) ... ok
+test_invalid_document_denied (test_retrieval_authorization.TestRetrievalAuthorization.test_invalid_document_denied) ... ok
+test_invalid_principal_denied (test_retrieval_authorization.TestRetrievalAuthorization.test_invalid_principal_denied) ... ok
+test_invalid_role_type_denied (test_retrieval_authorization.TestRetrievalAuthorization.test_invalid_role_type_denied) ... ok
+test_researcher_allowed_confidential (test_retrieval_authorization.TestRetrievalAuthorization.test_researcher_allowed_confidential) ... ok
+test_researcher_denied_restricted (test_retrieval_authorization.TestRetrievalAuthorization.test_researcher_denied_restricted) ... ok
+test_security_admin_allowed_restricted (test_retrieval_authorization.TestRetrievalAuthorization.test_security_admin_allowed_restricted) ... ok
+test_unknown_role_denied (test_retrieval_authorization.TestRetrievalAuthorization.test_unknown_role_denied) ... ok
+test_authorized_retrieval_returns_content (test_retrieval_gateway.TestRetrievalGateway.test_authorized_retrieval_returns_content) ... ok
+test_classification_denial_overrides_grant (test_retrieval_gateway.TestRetrievalGateway.test_classification_denial_overrides_grant) ... ok
+test_cross_team_retrieval_denied (test_retrieval_gateway.TestRetrievalGateway.test_cross_team_retrieval_denied) ... ok
+test_invalid_document_id_denied (test_retrieval_gateway.TestRetrievalGateway.test_invalid_document_id_denied) ... ok
+test_missing_document_grants_denied (test_retrieval_gateway.TestRetrievalGateway.test_missing_document_grants_denied) ... ok
+test_rejected_ingestion_not_retrievable (test_retrieval_gateway.TestRetrievalGateway.test_rejected_ingestion_not_retrievable) ... ok
+test_unknown_document_denied (test_retrieval_gateway.TestRetrievalGateway.test_unknown_document_denied) ... ok
+test_unknown_role_denied (test_retrieval_gateway.TestRetrievalGateway.test_unknown_role_denied) ... ok
+test_developer_message_spoofing_detected (test_retrieved_content.TestRetrievedContentScreening.test_developer_message_spoofing_detected) ... ok
+test_empty_content_rejected (test_retrieved_content.TestRetrievedContentScreening.test_empty_content_rejected) ... ok
+test_encoded_attack_bypasses_screening (test_retrieved_content.TestRetrievedContentScreening.test_encoded_attack_bypasses_screening)
+Known limitation: encoded instruction payload. ... ok
+test_hidden_instruction_extraction_detected (test_retrieved_content.TestRetrievedContentScreening.test_hidden_instruction_extraction_detected) ... ok
+test_invalid_content_rejected (test_retrieved_content.TestRetrievedContentScreening.test_invalid_content_rejected) ... ok
+test_legitimate_content_accepted (test_retrieved_content.TestRetrievedContentScreening.test_legitimate_content_accepted) ... ok
+test_paraphrased_attack_bypasses_screening (test_retrieved_content.TestRetrievedContentScreening.test_paraphrased_attack_bypasses_screening)
+Known limitation: indirect behavioral redirection. ... ok
+test_previous_instructions_attack_detected (test_retrieved_content.TestRetrievedContentScreening.test_previous_instructions_attack_detected) ... ok
+test_quoted_attack_triggers_false_positive (test_retrieved_content.TestRetrievedContentScreening.test_quoted_attack_triggers_false_positive)
+Known limitation: legitimate discussion of attacks. ... ok
+test_role_reassignment_detected (test_retrieved_content.TestRetrievedContentScreening.test_role_reassignment_detected) ... ok
+test_authorized_clean_document_prepared (test_secure_context_pipeline.TestSecureContextPipeline.test_authorized_clean_document_prepared) ... ok
+test_classification_denial_blocks_context (test_secure_context_pipeline.TestSecureContextPipeline.test_classification_denial_blocks_context) ... ok
+test_cross_team_access_blocked_before_context (test_secure_context_pipeline.TestSecureContextPipeline.test_cross_team_access_blocked_before_context) ... ok
+test_invalid_question_blocks_context (test_secure_context_pipeline.TestSecureContextPipeline.test_invalid_question_blocks_context) ... ok
+test_known_injection_blocked_after_authorization (test_secure_context_pipeline.TestSecureContextPipeline.test_known_injection_blocked_after_authorization) ... ok
+test_missing_grants_block_context (test_secure_context_pipeline.TestSecureContextPipeline.test_missing_grants_block_context) ... ok
+test_paraphrased_injection_reaches_context (test_secure_context_pipeline.TestSecureContextPipeline.test_paraphrased_injection_reaches_context)
+Document the known pattern-screening bypass. ... ok
+test_rejected_ingestion_blocks_context (test_secure_context_pipeline.TestSecureContextPipeline.test_rejected_ingestion_blocks_context) ... ok
+test_role_spoofing_blocked_after_authorization (test_secure_context_pipeline.TestSecureContextPipeline.test_role_spoofing_blocked_after_authorization) ... ok
+test_unknown_document_blocks_context (test_secure_context_pipeline.TestSecureContextPipeline.test_unknown_document_blocks_context) ... ok
+test_inactive_source_denied (test_source_registry.TestSourceRegistry.test_inactive_source_denied) ... ok
+test_invalid_source_type_denied (test_source_registry.TestSourceRegistry.test_invalid_source_type_denied) ... ok
+test_public_source_allowed_public (test_source_registry.TestSourceRegistry.test_public_source_allowed_public) ... ok
+test_public_source_denied_confidential (test_source_registry.TestSourceRegistry.test_public_source_denied_confidential) ... ok
+test_research_source_allowed_confidential (test_source_registry.TestSourceRegistry.test_research_source_allowed_confidential) ... ok
+test_research_source_denied_restricted (test_source_registry.TestSourceRegistry.test_research_source_denied_restricted) ... ok
+test_security_source_allowed_restricted (test_source_registry.TestSourceRegistry.test_security_source_allowed_restricted) ... ok
+test_unknown_source_denied (test_source_registry.TestSourceRegistry.test_unknown_source_denied) ... ok
+
+----------------------------------------------------------------------
+Ran 90 tests in 0.008s
+
+OK

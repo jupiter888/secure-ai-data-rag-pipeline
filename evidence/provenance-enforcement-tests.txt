@@ -1,0 +1,35 @@
+test_content_tampering (test_document_metadata.TestDocumentMetadata.test_content_tampering) ... ok
+test_empty_document (test_document_metadata.TestDocumentMetadata.test_empty_document) ... ok
+test_invalid_classification (test_document_metadata.TestDocumentMetadata.test_invalid_classification) ... ok
+test_missing_source_identifier (test_document_metadata.TestDocumentMetadata.test_missing_source_identifier) ... ok
+test_valid_document (test_document_metadata.TestDocumentMetadata.test_valid_document) ... ok
+test_authorized_document_accepted (test_ingestion_gateway.TestIngestionGateway.test_authorized_document_accepted) ... ok
+test_duplicate_document_id_rejected (test_ingestion_gateway.TestIngestionGateway.test_duplicate_document_id_rejected) ... ok
+test_invalid_object_rejected (test_ingestion_gateway.TestIngestionGateway.test_invalid_object_rejected) ... ok
+test_missing_provenance_rejected (test_ingestion_gateway.TestIngestionGateway.test_missing_provenance_rejected) ... ok
+test_quarantine_excludes_document_content (test_ingestion_gateway.TestIngestionGateway.test_quarantine_excludes_document_content) ... ok
+test_recomputed_digest_attack_rejected (test_ingestion_gateway.TestIngestionGateway.test_recomputed_digest_attack_rejected) ... ok
+test_tampered_document_quarantined (test_ingestion_gateway.TestIngestionGateway.test_tampered_document_quarantined) ... ok
+test_unauthorized_classification_quarantined (test_ingestion_gateway.TestIngestionGateway.test_unauthorized_classification_quarantined) ... ok
+test_untrusted_source_quarantined (test_ingestion_gateway.TestIngestionGateway.test_untrusted_source_quarantined) ... ok
+test_classification_mismatch (test_provenance_registry.TestProvenanceRegistry.test_classification_mismatch) ... ok
+test_duplicate_registration_rejected (test_provenance_registry.TestProvenanceRegistry.test_duplicate_registration_rejected) ... ok
+test_invalid_trusted_digest_rejected (test_provenance_registry.TestProvenanceRegistry.test_invalid_trusted_digest_rejected) ... ok
+test_missing_provenance_record (test_provenance_registry.TestProvenanceRegistry.test_missing_provenance_record) ... ok
+test_owner_mismatch (test_provenance_registry.TestProvenanceRegistry.test_owner_mismatch) ... ok
+test_recomputed_digest_attack (test_provenance_registry.TestProvenanceRegistry.test_recomputed_digest_attack) ... ok
+test_source_identity_mismatch (test_provenance_registry.TestProvenanceRegistry.test_source_identity_mismatch) ... ok
+test_valid_provenance (test_provenance_registry.TestProvenanceRegistry.test_valid_provenance) ... ok
+test_inactive_source_denied (test_source_registry.TestSourceRegistry.test_inactive_source_denied) ... ok
+test_invalid_source_type_denied (test_source_registry.TestSourceRegistry.test_invalid_source_type_denied) ... ok
+test_public_source_allowed_public (test_source_registry.TestSourceRegistry.test_public_source_allowed_public) ... ok
+test_public_source_denied_confidential (test_source_registry.TestSourceRegistry.test_public_source_denied_confidential) ... ok
+test_research_source_allowed_confidential (test_source_registry.TestSourceRegistry.test_research_source_allowed_confidential) ... ok
+test_research_source_denied_restricted (test_source_registry.TestSourceRegistry.test_research_source_denied_restricted) ... ok
+test_security_source_allowed_restricted (test_source_registry.TestSourceRegistry.test_security_source_allowed_restricted) ... ok
+test_unknown_source_denied (test_source_registry.TestSourceRegistry.test_unknown_source_denied) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.003s
+
+OK

@@ -1,0 +1,27 @@
+test_authorized_document_accepted (tests.test_ingestion_gateway.TestIngestionGateway.test_authorized_document_accepted) ... ok
+test_authorized_poisoned_document_passes_ingestion (tests.test_ingestion_gateway.TestIngestionGateway.test_authorized_poisoned_document_passes_ingestion) ... ok
+test_duplicate_document_id_rejected (tests.test_ingestion_gateway.TestIngestionGateway.test_duplicate_document_id_rejected) ... ok
+test_invalid_object_rejected (tests.test_ingestion_gateway.TestIngestionGateway.test_invalid_object_rejected) ... ok
+test_missing_provenance_rejected (tests.test_ingestion_gateway.TestIngestionGateway.test_missing_provenance_rejected) ... ok
+test_quarantine_excludes_document_content (tests.test_ingestion_gateway.TestIngestionGateway.test_quarantine_excludes_document_content) ... ok
+test_recomputed_digest_attack_rejected (tests.test_ingestion_gateway.TestIngestionGateway.test_recomputed_digest_attack_rejected) ... ok
+test_tampered_document_quarantined (tests.test_ingestion_gateway.TestIngestionGateway.test_tampered_document_quarantined) ... ok
+test_unauthorized_classification_quarantined (tests.test_ingestion_gateway.TestIngestionGateway.test_unauthorized_classification_quarantined) ... ok
+test_untrusted_source_quarantined (tests.test_ingestion_gateway.TestIngestionGateway.test_untrusted_source_quarantined) ... ok
+test_authorized_clean_document_prepared (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_authorized_clean_document_prepared) ... ok
+test_authorized_poisoned_document_blocked_downstream (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_authorized_poisoned_document_blocked_downstream) ... ok
+test_classification_denial_blocks_context (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_classification_denial_blocks_context) ... ok
+test_cross_team_access_blocked_before_context (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_cross_team_access_blocked_before_context) ... ok
+test_invalid_question_blocks_context (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_invalid_question_blocks_context) ... ok
+test_known_injection_blocked_after_authorization (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_known_injection_blocked_after_authorization) ... ok
+test_missing_grants_block_context (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_missing_grants_block_context) ... ok
+test_paraphrased_injection_blocked_by_pipeline (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_paraphrased_injection_blocked_by_pipeline)
+Authorized retrieval must not bypass injection screening. ... ok
+test_rejected_ingestion_blocks_context (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_rejected_ingestion_blocks_context) ... ok
+test_role_spoofing_blocked_after_authorization (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_role_spoofing_blocked_after_authorization) ... ok
+test_unknown_document_blocks_context (tests.test_secure_context_pipeline.TestSecureContextPipeline.test_unknown_document_blocks_context) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.003s
+
+OK

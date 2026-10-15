@@ -1,0 +1,70 @@
+PROJECT 5 — END-TO-END ACCESS DENIAL VALIDATION
+
+Evidence ID: RAG5-003-E02
+Date: 2026-10-14
+Scenario: RAG5-003
+Test: Unauthorized document retrieval
+Environment: Local Python unittest
+Data: Synthetic only
+
+OBJECTIVE
+Verify that a principal without a document-specific
+access grant cannot retrieve protected document content
+through the secure context pipeline.
+
+TEST CONFIGURATION
+Document ID: DOC-RAG5-DENIAL-001
+Source: SOURCE-RESEARCH
+Classification: INTERNAL
+Authorized principal: authorized-analyst
+Attempting principal: unauthorized-analyst
+Attempting role: ANALYST
+
+ATTACK PRECONDITION
+The attempting principal has role-level permission
+to access INTERNAL documents but lacks the required
+document-specific grant.
+
+VALIDATION COMMAND
+python3 -B -m unittest tests.test_end_to_end_access_denial -v
+
+OBSERVED RESULTS
+Test: test_unauthorized_principal_cannot_reach_model
+Result: PASS
+Tests run: 1
+Failures: 0
+Errors: 0
+
+ASSERTIONS VERIFIED
+Synthetic document accepted by ingestion gateway.
+Document-specific grant assigned to another principal.
+Unauthorized principal denied access.
+Denial reason: DOCUMENT_ACCESS_DENIED.
+Secure context contains no messages.
+Model gateway not invoked.
+Mocked Ollama network call not invoked.
+
+SECURITY ASSESSMENT
+Role-level permission alone was insufficient.
+Document-specific authorization prevented retrieval
+through the tested secure context pipeline.
+
+CONTROL STATUS
+Role-based retrieval authorization: IMPLEMENTED AND TESTED
+Document-specific grants: IMPLEMENTED AND TESTED
+Deny-before-context behavior: IMPLEMENTED AND TESTED
+Mandatory model gateway enforcement: NOT IMPLEMENTED
+
+RESIDUAL RISKS
+Principal identities are caller-supplied.
+Administrative grant changes are not authenticated.
+The model gateway remains directly callable.
+Approved documents and grants use mutable in-memory state.
+The test does not establish production access isolation.
+
+NEXT VALIDATION
+Implement a unified orchestration boundary that requires
+successful authorization and secure context construction
+before model generation.
+Test authorized and unauthorized requests against that
+boundary with mocked model calls.

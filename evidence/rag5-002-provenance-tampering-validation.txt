@@ -1,0 +1,14 @@
+test_classification_mismatch (tests.test_provenance_registry.TestProvenanceRegistry.test_classification_mismatch) ... ok
+test_compromised_registry_accepts_matching_tampered_content (tests.test_provenance_registry.TestProvenanceRegistry.test_compromised_registry_accepts_matching_tampered_content) ... ok
+test_duplicate_registration_rejected (tests.test_provenance_registry.TestProvenanceRegistry.test_duplicate_registration_rejected) ... ok
+test_invalid_trusted_digest_rejected (tests.test_provenance_registry.TestProvenanceRegistry.test_invalid_trusted_digest_rejected) ... ok
+test_missing_provenance_record (tests.test_provenance_registry.TestProvenanceRegistry.test_missing_provenance_record) ... ok
+test_owner_mismatch (tests.test_provenance_registry.TestProvenanceRegistry.test_owner_mismatch) ... ok
+test_recomputed_digest_attack (tests.test_provenance_registry.TestProvenanceRegistry.test_recomputed_digest_attack) ... ok
+test_source_identity_mismatch (tests.test_provenance_registry.TestProvenanceRegistry.test_source_identity_mismatch) ... ok
+test_valid_provenance (tests.test_provenance_registry.TestProvenanceRegistry.test_valid_provenance) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
