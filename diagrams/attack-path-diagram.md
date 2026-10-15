@@ -92,10 +92,10 @@ flowchart TD
 
 The mappings below reference MITRE ATLAS catalog version 2026.09, as documented in the project's ATLAS mapping.
 
-- **RAG5-001:** AML.T0070 — RAG Poisoning.
-- **RAG5-002:** Conditional relationship to AML.T0070 where compromised provenance supports poisoned ingestion; registry tampering itself is assessed using STRIDE.
+- **RAG5-001:** [AML.T0070 — RAG Poisoning](https://atlas.mitre.org/techniques/AML.T0070/).
+- **RAG5-002:** Conditional relationship to [AML.T0070 — RAG Poisoning](https://atlas.mitre.org/techniques/AML.T0070/) where compromised provenance supports poisoned ingestion; registry tampering itself is assessed using STRIDE.
 - **RAG5-003:** STRIDE authorization scenario; no direct ATLAS technique asserted.
-- **RAG5-004:** AML.T0051.001 — Indirect LLM Prompt Injection.
-- **RAG5-005:** AML.T0057 — LLM Data Leakage.
+- **RAG5-004:** [AML.T0051.001 — Indirect LLM Prompt Injection](https://atlas.mitre.org/techniques/AML.T0051.001/).
+- **RAG5-005:** [AML.T0057 — LLM Data Leakage](https://atlas.mitre.org/techniques/AML.T0057/).
 
-See [MITRE ATLAS Mapping](../docs/atlas/atlas-mapping.md) for the complete rationale
+See the [MITRE ATLAS Mapping](../docs/atlas/atlas-mapping.md) for the complete rationale.
