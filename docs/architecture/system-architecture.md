@@ -78,12 +78,16 @@ Controls must be classified as Proposed, Implemented, or Tested.
 - No live cloud resources or paid infrastructure required.
 - No claims of production security enforcement without corresponding evidence.
 
-## 8. Initial Status
+## 8. Implementation and Validation Status
 
-Architecture: Proposed.
+Project 5 implements a synthetic, offline-first Python RAG security laboratory covering document ingestion, provenance validation, retrieval authorization, prompt-injection resistance, output protection, and security-event recording.
 
-Security controls: Proposed.
+The repository contains implemented security controls, automated tests, documented adversarial scenarios, and validation evidence.
 
-Attack scenarios: Planned.
+- **Architecture:** Implemented as a Python security laboratory with logical components and documented trust boundaries.
+- **Security controls:** Implemented and tested within the scope of the documented validation scenarios.
+- **Attack scenarios:** RAG5-001 through RAG5-005 are documented with supporting validation evidence.
+- **Regression testing:** The recorded test suite reports 129 passing tests. See `evidence/project5-full-regression.txt`.
+- **Infrastructure security:** Under review for applicable storage, process isolation, authorization, persistence, and network-exposure controls.
 
-Validation evidence: Not yet generated
+Control effectiveness, infrastructure assumptions, and residual risks are subject to verification against the implementation and supporting evidence. Passing automated tests does not establish comprehensive security or production readiness.
