@@ -4,8 +4,6 @@
 
 ## Overview
 
-An offline-first security engineering laboratory examining document provenance, ingestion integrity, retrieval authorization, prompt-injection defenses, sensitive-information protection, and security event recording in retrieval-augmented generation (RAG) systems.
-
 The project extends the earlier [Secure RAG Prompt Injection Lab](https://github.com/jupiter888/secure-rag-prompt-injection-lab) into a multi-boundary security architecture with adversarial testing, documented mitigation decisions, and evidence-linked threat modeling.
 
 **Validation:** 129 automated tests passed, with zero failures or errors.
