@@ -212,7 +212,3 @@ Third-party materials remain subject to their respective terms.
 **Portfolio focus:** AI security architecture, secure RAG engineering,
 adversarial validation, trust-boundary enforcement, threat modeling,
 and evidence-based control assessment.
-
----
-
-**Portfolio focus:** AI security architecture, secure RAG engineering, adversarial validation, trust-boundary enforcement, threat modeling, and evidence-based control assessment.
