@@ -1,4 +1,4 @@
-# Secure AI Data and RAG Pipeline
+# Project 5 —  Secure AI Data and RAG Pipeline
 
 **RAG Security | Data Provenance | Ingestion Integrity | Retrieval Authorization | Prompt Injection Defense | Sensitive Data Protection | Threat Modeling**
 
