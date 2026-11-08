@@ -1,6 +1,8 @@
 # Secure AI Data and RAG Pipeline
 
-**Project 5 — AI Security Architecture Portfolio**
+**RAG Security | Data Provenance | Ingestion Integrity | Retrieval Authorization | Prompt Injection Defense | Sensitive Data Protection | Threat Modeling**
+
+## Overview
 
 An offline-first security engineering laboratory examining document provenance, ingestion integrity, retrieval authorization, prompt-injection defenses, sensitive-information protection, and security event recording in retrieval-augmented generation (RAG) systems.
 
